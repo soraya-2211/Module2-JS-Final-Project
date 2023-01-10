@@ -1,0 +1,107 @@
+
+ #canvas {
+   height: 0px;
+ }
+
+body {
+   font-family: Trebuchet MS, arial, sans-serif;
+   margin: 2em;
+   background-color: rgb(41, 42, 80);
+   color: rgb(252, 242, 223); 
+}
+
+h1 {
+font-family: Verdana, arial, sans-serif; 
+}
+
+#game-mode {
+   font-size: 20px;
+   font-weight: bold;
+   inline-size: max-content;
+   color: rgb(252, 242, 223);
+   font-family: Trebuchet MS, arial, sans-serif;
+   padding: 10px;
+   margin: 5px;
+   border-radius: 10px;
+   border-style: solid;
+   border-color: rgb(252, 242, 223);
+}
+
+#hideButton {
+   display: flex;
+   flex-direction: row;
+   max-width: 100%;
+}
+
+#btn1 {
+   font-size: 60px;
+   inline-size: min-content;
+   color: rgb(41, 42, 80) ;
+   box-shadow: 10px 10px rgba(1, 1, 31, 0.603);
+   background-color: rgb(252, 242, 223);
+   font-family: Trebuchet MS, arial, sans-serif;
+   padding: 10px;
+   margin: 5px;
+   border-radius: 10px;
+   user-select:none;
+}
+#btn1 { transition-duration: 0.1s;}
+#btn1:hover {
+  background-color:#50ddbf;
+}
+
+#subject {
+   font-family: Trebuchet MS, arial, sans-serif;
+   font-size: 30px;
+   margin: 2em;
+   margin: 0;
+}
+#writeHere {
+   font-family: Trebuchet MS, arial, sans-serif;
+   font-size: 40px;
+   font-weight: bold;
+   margin: 2em;
+   color: rgb(66, 197, 236); 
+   margin: 0;
+}
+
+#countdown {
+   font-size: 70px;
+}
+
+#lose {
+   font-family: Trebuchet MS, arial, sans-serif;
+   font-size: 30px;
+   font-style: bold;
+   margin: 2em;
+   color: rgb(219, 116, 97); 
+ }
+ #win {
+   font-family: Trebuchet MS, arial, sans-serif;
+   font-size: 30px;
+   font-style: bold;
+   margin: 2em;
+   color: #05c46b;
+ }
+
+ button {
+   font-size: 20px;
+   font-weight: bold;
+   inline-size: max-content;
+   color: rgb(41, 42, 80) ;
+   font-family: Trebuchet MS, arial, sans-serif;
+   padding: 10px;
+   margin: 5px;
+   border-radius: 10px;
+   border-style: solid;
+   border-color: rgb(252, 242, 223);
+ }
+ button { transition-duration: 0.4s;}
+ button:hover {
+   background-color:#05c46b;
+ }
+
+ #restartButton { transition-duration: 0.4s;}
+ #restartButton:hover {
+   background-color:rgb(219, 116, 97); 
+ }

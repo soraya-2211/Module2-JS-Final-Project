@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Alphabet Word Game</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js"></script>
+    
+  </head>  
+  <body>
+    <h1>Alphabet Word Game</h1>
+    <div id="start-screen" class="screen" style="display:block">
+      <p> Select a game mode to start! <div></div>To play, read the given prompt. Think of a word that matches the prompt,
+        then click the first letter of that word. Once you do, the letter you removed will be gone from the choice list.
+      <div></div>
+      </p>
+      <div id="game-mode">Game Mode</div>
+      <button onclick="Competitive()">Competitive</button>
+      <button onclick="Timed()">Timed</button>
+    </div>
+    <canvas id="canvas" style="display:none"></canvas>
+
+    <p>
+      <div>
+      <strong>COMPETITIVE</strong>: Take turns thinking of a word. The first player to lose to the timer loses the game!
+      <div>
+      <strong>TIMED</strong>: Think of at least 15 words before the timer runs out to win!
+    </p>
+
+    <p id="subject"> Subject: </p>
+    <p id="writeHere"></p>
+    <script>
+    document.getElementById("writeHere").innerHTML = currentSubject;
+    </script>
+
+    <div id="hideButton">
+      <script> document.body.onload = addElement; </script>
+    </div>
+
+   <div class="container">
+    <h1 id="headline">TIMER</h1>
+    <div id="countdown">
+        <span id="seconds"></span>
+    </div>
+  </div>
+  <div>
+    <button id="restartButton" onclick="resetGame()">Restart</button>
+  </div>
+  </body>
+</html>
